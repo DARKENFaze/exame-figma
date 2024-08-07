@@ -1,0 +1,30 @@
+// reset
+@use "./typography";
+
+header {
+  nav {
+    padding: 10px 0;
+    .this-father {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    ul {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        a {
+          color: rgba(65, 65, 65, 1);
+        }
+      }
+    }
+  }
+}
