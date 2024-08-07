@@ -37,8 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const loading = document.getElementById("loading");
 
-const loadingDuration = 2000; // 2s
+const loadingDuration = 750; // 1s
 
 setTimeout(() => {
   loading.classList.add("loading-none");
 }, loadingDuration);
+
+// animation
+AOS.init();
