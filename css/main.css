@@ -714,3 +714,56 @@ footer .call_sc .call_numb {
   display: flex;
   align-items: center;
 }
+
+.dark body {
+  background-color: red;
+  transition: 0.3s ease;
+}
+
+.dark .darken {
+  color: var(--toggle-color);
+}
+
+.dark .menu-icon_icc {
+  transition: all 0.5s ease;
+  color: var(--text-color);
+}
+
+.dark .menu-icon_icc:hover {
+  transition: all 0.5s ease;
+  color: rgb(255, 0, 0);
+}
+
+.dark td {
+  color: var(--text-color);
+}
+
+.dark tr:hover {
+  color: var(--text-color);
+}
+
+.menu-item-tic {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #b0b0b0;
+  transition: background-color 0.3s;
+}
+
+.menu-item a {
+  font-size: 16px;
+}
+
+.menu-item.active,
+.menu-item:hover {
+  border-left: 3px solid rgb(221, 226, 255);
+  background-color: #1a1a1a;
+  color: #fff;
+}

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="icon" href="./img/logo-brand-2.svg" />
     <!-- cc links -->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/loading.css" />
     <!-- more links -->
     <link
       rel="stylesheet"
@@ -17,6 +18,17 @@
     />
   </head>
   <body>
+    <div id="loading">
+      <div class="loadingio-spinner-double-ring-nq4q5u6dq7r">
+        <div class="ldio-x2uulkbinbj">
+          <div></div>
+          <div></div>
+          <div><div></div></div>
+          <div><div></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- 1 -->
     <header>
       <nav>
         <div class="container">
@@ -56,6 +68,7 @@
                   >Корзина</a
                 >
               </li>
+              <!-- theme-mode -->
             </ul>
             <div class="aleks">
               <img src="./img/avatar.svg" alt="" />
@@ -623,6 +636,17 @@
         </div>
       </div>
     </footer>
+    <!-- mode-theme -->
+    <script>
+      const loading = document.getElementById("loading");
+
+      const loadingDuration = 2000; // 2s
+
+      setTimeout(() => {
+        loading.classList.add("loading-none");
+      }, loadingDuration);
+    </script>
+    <!-- done -->
     <script src="./js/main.js"></script>
   </body>
 </html>
